@@ -1,0 +1,17 @@
+[Unit]
+Description=Portfolio contact form to Telegram
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+EnvironmentFile=/etc/portfolio-contact.env
+ExecStart=/usr/bin/python3 /opt/portfolio-contact/contact_server.py
+Restart=on-failure
+RestartSec=5
+DynamicUser=yes
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+
+[Install]
+WantedBy=multi-user.target
