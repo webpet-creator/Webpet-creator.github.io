@@ -19,7 +19,7 @@ export const fr = {
   hero: {
     role: 'Développeur web et bots Telegram',
     statement:
-      'Je construis des bots Telegram et des sites web pour des besoins concrets. Le dernier met en relation des voyageurs et des expéditeurs de colis entre la Russie et l’Afrique.',
+      'Je construis des bots Telegram, des sites et des applications pour des besoins concrets. Deux sont en ligne : un service d’envoi de colis entre la Russie et l’Afrique, et une application de pronostics sportifs.',
     cardLabel: 'Projet n° 01',
     imageNeeded: '[IMAGE NEEDED] capture du bot',
     typeLabel: 'Type',
@@ -43,7 +43,7 @@ export const fr = {
   },
   projects: {
     label: 'Projets',
-    title: 'Un projet en ligne, deux en construction',
+    title: 'Deux projets en ligne, deux en construction',
   },
   skills: {
     label: 'Compétences',
@@ -124,10 +124,6 @@ export const fr = {
     stackLabel: 'Technique',
     launchedLabel: 'Lancement',
     linksLabel: 'Liens',
-    tryTitle: 'Essayer le bot',
-    tryText: 'Le bot est ouvert à tous sur Telegram, en français et en anglais.',
-    openBot: 'Ouvrir le bot',
-    openChannel: 'Voir le canal',
   },
   footer: {
     basedLabel: 'Basé à',

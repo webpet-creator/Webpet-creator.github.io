@@ -70,8 +70,10 @@ dépendance sans justifier : pourquoi, ce qu'elle apporte, pourquoi pas une solu
 - Ton humain, précis, simple. Pas de phrases marketing génériques.
 - Compétences affichées : Python et aiogram, HTML, CSS, JavaScript, PHP, SQL et MySQL,
   déploiement sur VPS Linux. C#, Cisco Packet Tracer et Android restent en retrait.
-- Kilos Russie ↔ Afrique : décrire le principe du modèle économique, jamais les montants.
-  Aucun chiffre d'usage tant qu'il n'y en a pas de réel.
+- Projets en ligne et achevés : Kilos Russie ↔ Afrique (bot, canal et site) et PronoMax
+  (application Android et site). RusStart et Scholarship Finder restent « en cours ».
+- Kilos : décrire le modèle (gratuit, porté par les dons), jamais de montants. Les chiffres
+  d'usage ne viennent que d'une source réelle (le site de Kilos) et portent leur date.
 - Pas de section « Expérience ».
 - Chaque texte existe en français, anglais et russe. Le français est rédigé en premier.
 

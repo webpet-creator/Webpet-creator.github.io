@@ -29,11 +29,15 @@ export const projects: Project[] = [
     name: 'Kilos Russie ↔ Afrique',
     status: 'live',
     year: 2026,
-    category: { fr: 'Bot Telegram', en: 'Telegram bot', ru: 'Telegram-бот' },
+    category: {
+      fr: 'Bot Telegram et site web',
+      en: 'Telegram bot and website',
+      ru: 'Telegram-бот и сайт',
+    },
     summary: {
-      fr: 'Un bot et un canal Telegram qui mettent en relation des voyageurs ayant des kilos de bagage libres et des personnes qui veulent envoyer un colis entre la Russie et l’Afrique.',
-      en: 'A Telegram bot and channel that connect travellers with spare luggage kilos to people who want to send a parcel between Russia and Africa.',
-      ru: 'Telegram-бот и канал, которые связывают путешественников со свободными килограммами багажа и тех, кто хочет отправить посылку между Россией и Африкой.',
+      fr: 'Un bot Telegram et un site qui mettent en relation des voyageurs ayant des kilos de bagage libres et des personnes qui veulent envoyer un colis entre la Russie et l’Afrique. Gratuit, en six langues.',
+      en: 'A Telegram bot and website that connect travellers with spare luggage kilos to people who want to send a parcel between Russia and Africa. Free, in six languages.',
+      ru: 'Telegram-бот и сайт, которые связывают путешественников со свободными килограммами багажа и тех, кто хочет отправить посылку между Россией и Африкой. Бесплатно, на шести языках.',
     },
     stack: ['Python', 'aiogram'],
     cover: {
@@ -49,6 +53,28 @@ export const projects: Project[] = [
     links: [
       { label: '@KilosAfriqueBot', href: 'https://t.me/KilosAfriqueBot' },
       { label: 't.me/kilos_russie_afrique', href: 'https://t.me/kilos_russie_afrique' },
+      { label: 'kilosafrique.duckdns.org', href: 'https://kilosafrique.duckdns.org/' },
+    ],
+  },
+  {
+    slug: 'pronomax',
+    name: 'PronoMax',
+    status: 'live',
+    year: 2026,
+    category: {
+      fr: 'Application Android et site web',
+      en: 'Android app and website',
+      ru: 'Android-приложение и сайт',
+    },
+    summary: {
+      fr: 'Une application de pronostics foot, basket et hockey construite à partir des chiffres réels de la saison, avec un bilan public, gagné ou perdu.',
+      en: 'A football, basketball and hockey predictions app built on the season’s real numbers, with a public record, won or lost.',
+      ru: 'Приложение с прогнозами на футбол, баскетбол и хоккей на основе реальных цифр сезона, с открытой статистикой выигрышей и проигрышей.',
+    },
+    stack: ['React Native', 'Expo', 'Firebase'],
+    links: [
+      { label: 'pronomax-6c96b.web.app', href: 'https://pronomax-6c96b.web.app/' },
+      { label: '@PronoMax_Agent', href: 'https://t.me/PronoMax_Agent' },
     ],
   },
   {

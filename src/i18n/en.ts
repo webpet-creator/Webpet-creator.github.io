@@ -20,7 +20,7 @@ export const en: Dict = {
   hero: {
     role: 'Web and Telegram bot developer',
     statement:
-      'I build Telegram bots and websites for real needs. The latest one connects travellers and parcel senders between Russia and Africa.',
+      'I build Telegram bots, websites and apps for real needs. Two are live: a parcel-sending service between Russia and Africa, and a sports predictions app.',
     cardLabel: 'Project no. 01',
     imageNeeded: '[IMAGE NEEDED] bot screenshot',
     typeLabel: 'Type',
@@ -44,7 +44,7 @@ export const en: Dict = {
   },
   projects: {
     label: 'Projects',
-    title: 'One project live, two in the works',
+    title: 'Two projects live, two in the works',
   },
   skills: {
     label: 'Skills',
@@ -125,10 +125,6 @@ export const en: Dict = {
     stackLabel: 'Stack',
     launchedLabel: 'Launch',
     linksLabel: 'Links',
-    tryTitle: 'Try the bot',
-    tryText: 'The bot is open to everyone on Telegram, in French and English.',
-    openBot: 'Open the bot',
-    openChannel: 'See the channel',
   },
   footer: {
     basedLabel: 'Based in',

@@ -12,7 +12,7 @@ const variants: Record<Variant, string> = {
 export function Tag({ variant = 'outline', children }: { variant?: Variant; children: ReactNode }) {
   return (
     <span
-      className={`inline-flex items-center rounded-sm px-3 py-2 text-sm leading-none font-semibold tracking-wide ${variants[variant]}`}
+      className={`inline-flex items-center rounded-sm px-3 py-2 text-sm leading-none font-semibold tracking-wide whitespace-nowrap ${variants[variant]}`}
     >
       {children}
     </span>

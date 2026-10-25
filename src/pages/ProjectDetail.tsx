@@ -17,7 +17,7 @@ export function ProjectDetail({ lang }: { lang: Lang }) {
 
   const t = getDict(lang)
   const text = study.text[lang]
-  const [bot, channel] = project.links
+  const [mainAction, ...otherActions] = text.actions
   const linkClass = 'underline decoration-accent underline-offset-4 hover:text-accent'
 
   return (
@@ -102,6 +102,22 @@ export function ProjectDetail({ lang }: { lang: Lang }) {
                     ))}
                   </div>
                 )}
+                {section.figures && (
+                  <dl className="border-line mt-6 grid grid-cols-3 gap-4 border-t pt-6">
+                    {section.figures.map((figure) => (
+                      <div key={figure.label}>
+                        <dt className="sr-only">{figure.label}</dt>
+                        <dd className="font-display text-accent text-4xl font-extrabold lg:text-5xl">
+                          {figure.value}
+                        </dd>
+                        <dd aria-hidden="true" className="text-muted mt-2">
+                          {figure.label}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                )}
+                {section.note && <p className="text-muted mt-6 text-sm">{section.note}</p>}
                 {section.items && (
                   <ul className="border-line mt-6 border-b">
                     {section.items.map((item) => (
@@ -120,18 +136,18 @@ export function ProjectDetail({ lang }: { lang: Lang }) {
       <Container className="pb-16 lg:pb-28">
         <div className="bg-paper text-ink [&_:focus-visible]:outline-ink rounded-md p-7 lg:p-16">
           <h2 className="font-display text-3xl leading-none font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-            {t.project.tryTitle}
+            {text.tryTitle}
           </h2>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed lg:text-xl">{t.project.tryText}</p>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed lg:text-xl">{text.tryText}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
-            <ButtonLink href={bot.href} variant="ink" arrow>
-              {t.project.openBot}
+            <ButtonLink href={mainAction.href} variant="ink" arrow>
+              {mainAction.label}
             </ButtonLink>
-            {channel && (
-              <ButtonLink href={channel.href} variant="ink-outline">
-                {t.project.openChannel}
+            {otherActions.map((action) => (
+              <ButtonLink key={action.href} href={action.href} variant="ink-outline">
+                {action.label}
               </ButtonLink>
-            )}
+            ))}
           </div>
         </div>
       </Container>
