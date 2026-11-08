@@ -71,7 +71,8 @@ dépendance sans justifier : pourquoi, ce qu'elle apporte, pourquoi pas une solu
 - Compétences affichées : Python et aiogram, HTML, CSS, JavaScript, PHP, SQL et MySQL,
   déploiement sur VPS Linux. C#, Cisco Packet Tracer et Android restent en retrait.
 - Projets en ligne et achevés : Kilos Russie ↔ Afrique (bot, canal et site) et PronoMax
-  (application Android et site). RusStart et Scholarship Finder restent « en cours ».
+  (application Android et site). Le site ne montre que des projets achevés et en ligne : pas de
+  section « en cours ».
 - Kilos : décrire le modèle (gratuit, porté par les dons), jamais de montants. Les chiffres
   d'usage ne viennent que d'une source réelle (le site de Kilos) et portent leur date.
 - Pas de section « Expérience ».

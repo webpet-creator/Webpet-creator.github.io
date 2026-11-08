@@ -43,11 +43,12 @@ export const fr = {
   },
   projects: {
     label: 'Projets',
-    title: 'Deux projets en ligne, deux en construction',
+    title: 'Deux projets en ligne',
   },
   skills: {
     label: 'Compétences',
     title: 'Ce que je peux construire pour vous',
+    usedIn: 'Utilisé dans',
     items: {
       bots: {
         title: 'Bots Telegram',
@@ -91,7 +92,7 @@ export const fr = {
     portraitAlt: 'Portrait de Pierre Gnadjro',
     paragraphs: [
       'Je m’appelle Komlan Pierre Gnadjro. Je suis en troisième année à l’Université d’État de Kalouga, en Russie, dans la spécialité « Systèmes et technologies de l’information ».',
-      'Mes projets partent de besoins concrets des étudiants internationaux en Russie : envoyer un colis au pays, apprendre les phrases utiles en russe, trouver une bourse.',
+      'Mes projets partent de besoins concrets : envoyer un colis entre la Russie et l’Afrique avec un voyageur vérifié, ou suivre des pronostics sportifs dont le bilan est affiché, gagné ou perdu.',
     ],
     studyLabel: 'Formation',
     study: 'Systèmes et technologies de l’information, 3ᵉ année',

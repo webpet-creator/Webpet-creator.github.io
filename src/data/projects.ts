@@ -21,7 +21,7 @@ export interface Project {
 /**
  * Ajouter un projet = ajouter un objet ici. Aucun composant à modifier.
  * Le premier projet de la liste est celui mis en avant dans le hero.
- * Seuls les projets `live` ont une page détaillée.
+ * Seuls les projets `live` ont une page détaillée. Ne lister que des projets achevés et en ligne.
  */
 export const projects: Project[] = [
   {
@@ -76,34 +76,6 @@ export const projects: Project[] = [
       { label: 'pronomax-6c96b.web.app', href: 'https://pronomax-6c96b.web.app/' },
       { label: '@PronoMax_Agent', href: 'https://t.me/PronoMax_Agent' },
     ],
-  },
-  {
-    slug: 'russtart',
-    name: 'RusStart',
-    status: 'in-progress',
-    year: 2026,
-    category: { fr: 'Application Android', en: 'Android app', ru: 'Android-приложение' },
-    summary: {
-      fr: 'Une application hors ligne pour apprendre les phrases de survie en russe, pensée pour les étudiants internationaux.',
-      en: 'An offline app for learning Russian survival phrases, designed for international students.',
-      ru: 'Офлайн-приложение для изучения самых нужных русских фраз, созданное для иностранных студентов.',
-    },
-    stack: [],
-    links: [],
-  },
-  {
-    slug: 'scholarship-finder',
-    name: 'Scholarship Finder',
-    status: 'in-progress',
-    year: 2026,
-    category: { fr: 'Outil web', en: 'Web tool', ru: 'Веб-инструмент' },
-    summary: {
-      fr: 'Un outil qui part du profil d’un étudiant et lui propose des bourses d’étude réelles, avec la marche à suivre pour postuler.',
-      en: 'A tool that starts from a student’s profile and suggests real scholarships, with the steps to apply.',
-      ru: 'Инструмент, который по профилю студента подбирает реальные стипендии и объясняет, как подать заявку.',
-    },
-    stack: [],
-    links: [],
   },
 ]
 

@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+import { getProject } from '../../data/projects'
 import { skillGroups } from '../../data/skills'
 import { getDict, type Lang } from '../../i18n'
 import { Section } from '../ui/Section'
@@ -21,6 +23,26 @@ export function Skills({ lang }: { lang: Lang }) {
                   </li>
                 ))}
               </ul>
+              {group.usedIn.length > 0 && (
+                <p className="text-muted mt-5 text-sm">
+                  {t.skills.usedIn}{' '}
+                  {group.usedIn.map((slug, index) => {
+                    const project = getProject(slug)
+                    if (!project) return null
+                    return (
+                      <span key={slug}>
+                        {index > 0 && ', '}
+                        <Link
+                          to={`/${lang}/projects/${slug}`}
+                          className="text-paper decoration-accent hover:text-accent underline underline-offset-4"
+                        >
+                          {project.name}
+                        </Link>
+                      </span>
+                    )
+                  })}
+                </p>
+              )}
             </li>
           )
         })}

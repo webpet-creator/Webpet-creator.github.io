@@ -44,11 +44,12 @@ export const en: Dict = {
   },
   projects: {
     label: 'Projects',
-    title: 'Two projects live, two in the works',
+    title: 'Two projects live',
   },
   skills: {
     label: 'Skills',
     title: 'What I can build for you',
+    usedIn: 'Used in',
     items: {
       bots: {
         title: 'Telegram bots',
@@ -92,7 +93,7 @@ export const en: Dict = {
     portraitAlt: 'Portrait of Pierre Gnadjro',
     paragraphs: [
       'My name is Komlan Pierre Gnadjro. I am a third-year student at Kaluga State University, Russia, majoring in Information Systems and Technologies.',
-      'My projects start from real needs of international students in Russia: sending a parcel home, learning useful Russian phrases, finding a scholarship.',
+      'My projects start from real needs: sending a parcel between Russia and Africa with a verified traveller, or following sports predictions whose record is shown, won or lost.',
     ],
     studyLabel: 'Studies',
     study: 'Information Systems and Technologies, 3rd year',
